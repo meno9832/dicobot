@@ -8,7 +8,8 @@ intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
-env: BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+env: 
+    BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
 # 시작 메시지 ID 저장
 start_msg_id = None
